@@ -20,6 +20,7 @@ template(name="header")
     a#brand(href="/") fview-quickstart
     a(href="/") Home
     a(href="/page2") Page 2
+    a(href="/page3") Page 3
 
 template(name="home")
   +Surface class="page"
@@ -57,10 +58,24 @@ template(name="home")
     a(href='/page2') Example Page 2
 
 template(name="page2")
-  +Surface class="page"
+  +Surface class="page" watchSize="true" size="[true]"
     h1 Welcome to Page 2
     p
       | Change your transition type on the
       code #Rendercontroller
       | in your layout template.
     a(href="/") Back to Home
+
+template(name="page3")
+  +Scrollview proportions='[.5,1]'
+    +Surface class="page" size="[undefined,true]" watchSize="true"
+      h1 Welcome to Page 3
+      p
+        | Change your transition type on the
+        code #Rendercontroller
+        | in your layout template.
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec justo dui, rhoncus eget ultricies et, commodo vitae massa. Proin urna lorem, egestas vitae semper quis, egestas id nibh. Cras sit amet est quis dolor rhoncus aliquam. Vivamus laoreet in quam quis placerat. Sed lacinia in dolor sed cursus. Aliquam erat volutpat. Nulla semper, libero ac sagittis finibus, dui magna fermentum augue, quis scelerisque ex enim sit amet justo. Nullam semper, ipsum quis convallis malesuada, mi dui sollicitudin leo, eget auctor arcu justo ut felis. Quisque metus lectus, dignissim nec tempor eget, posuere sed nisi. Aenean accumsan sed lacus dignissim euismod. Duis venenatis, leo ut vulputate ultrices, dolor mi pretium dolor, non elementum risus libero in lectus. Suspendisse velit libero, malesuada sit amet augue laoreet, lacinia tincidunt lorem.
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec justo dui, rhoncus eget ultricies et, commodo vitae massa. Proin urna lorem, egestas vitae semper quis, egestas id nibh. Cras sit amet est quis dolor rhoncus aliquam. Vivamus laoreet in quam quis placerat. Sed lacinia in dolor sed cursus. Aliquam erat volutpat. Nulla semper, libero ac sagittis finibus, dui magna fermentum augue, quis scelerisque ex enim sit amet justo. Nullam semper, ipsum quis convallis malesuada, mi dui sollicitudin leo, eget auctor arcu justo ut felis. Quisque metus lectus, dignissim nec tempor eget, posuere sed nisi. Aenean accumsan sed lacus dignissim euismod. Duis venenatis, leo ut vulputate ultrices, dolor mi pretium dolor, non elementum risus libero in lectus. Suspendisse velit libero, malesuada sit amet augue laoreet, lacinia tincidunt lorem.
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec justo dui, rhoncus eget ultricies et, commodo vitae massa. Proin urna lorem, egestas vitae semper quis, egestas id nibh. Cras sit amet est quis dolor rhoncus aliquam. Vivamus laoreet in quam quis placerat. Sed lacinia in dolor sed cursus. Aliquam erat volutpat. Nulla semper, libero ac sagittis finibus, dui magna fermentum augue, quis scelerisque ex enim sit amet justo. Nullam semper, ipsum quis convallis malesuada, mi dui sollicitudin leo, eget auctor arcu justo ut felis. Quisque metus lectus, dignissim nec tempor eget, posuere sed nisi. Aenean accumsan sed lacus dignissim euismod. Duis venenatis, leo ut vulputate ultrices, dolor mi pretium dolor, non elementum risus libero in lectus. Suspendisse velit libero, malesuada sit amet augue laoreet, lacinia tincidunt lorem.
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec justo dui, rhoncus eget ultricies et, commodo vitae massa. Proin urna lorem, egestas vitae semper quis, egestas id nibh. Cras sit amet est quis dolor rhoncus aliquam. Vivamus laoreet in quam quis placerat. Sed lacinia in dolor sed cursus. Aliquam erat volutpat. Nulla semper, libero ac sagittis finibus, dui magna fermentum augue, quis scelerisque ex enim sit amet justo. Nullam semper, ipsum quis convallis malesuada, mi dui sollicitudin leo, eget auctor arcu justo ut felis. Quisque metus lectus, dignissim nec tempor eget, posuere sed nisi. Aenean accumsan sed lacus dignissim euismod. Duis venenatis, leo ut vulputate ultrices, dolor mi pretium dolor, non elementum risus libero in lectus. Suspendisse velit libero, malesuada sit amet augue laoreet, lacinia tincidunt lorem.
+      a(href="/") Back to Home
